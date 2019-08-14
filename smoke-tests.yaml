@@ -1,0 +1,13 @@
+metadata:
+    format: Lava-Test Test Definition 1.0
+    name: smoke-tests
+    description: "Basic system tests. Runs simple commands only."
+    maintainer:
+        - katc@jfrog.com
+
+
+run:
+    steps:
+        - lava-test-case linux-posix-pwd --shell pwd
+        - lava-test-case linux-posix-uname --shell uname
+        - lava-test-case linux-posix-ifconfig --shell ifconfig -a
